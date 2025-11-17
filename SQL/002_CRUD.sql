@@ -1,4 +1,4 @@
-
+-- CREATE
 
 --insert into Students (id, lastName) values(10, 'Johansson');
 --insert into Students values(11, 'Emil', 'Johansson');
@@ -15,7 +15,22 @@
 --where 
 --	id < 7;
 
+--select * from newStudents;
+
+--insert into newStudents (id, name)
+--select id, firstName from Students where id > 8;
+
+
+-- UPDATE ----------
+
 select * from newStudents;
 
-insert into newStudents (id, name)
-select id, firstName from Students where id > 8;
+update newStudents set Name = 'Fredrik Andersson', id = 3 where id < 5;
+
+
+-- DELETE ----------
+
+delete from newStudents where id = 3;
+
+
+
