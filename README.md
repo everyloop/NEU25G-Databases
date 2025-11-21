@@ -10,8 +10,9 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 |-----------------|----------------------------------------------------------------|
 | [Nov 17][Nov17] | SQL Server & Management Studio, SQL intro, CRUD                |
 | [Nov 19][Nov19] | Aggregering, Gruppering, Datatyper, Variabler                |
+| [Nov 21][Nov21] | Joins                |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
 [Nov19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov19.md  
-
+[Nov21]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov21.md  
