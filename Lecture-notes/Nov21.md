@@ -198,3 +198,33 @@ StudentCourses
 - StudentID (FK → Students)
 - CourseID (FK → Courses)
 - Primärnyckel: alltid kombinerad PK på båda (eller surrogate key + unique constraint)
+
+## 4️⃣ Self-referencing (rekursiv) relation
+
+En rad i tabellen **refererar till en annan rad i samma tabell**.
+
+📘 Exempel:
+
+Employees har en manager som också är en employee:
+```
+Employees
+-----------
+EmployeeID (PK)
+Name
+ManagerID (FK → Employees.EmployeeID)
+```
+
+Relation:
+```
+Employees 1 --- ∞ Employees
+          (self-referencing)
+```
+📌 **Används för:**
+- organisationshierarkier (chefer → anställda)
+- kategoriträd (kategori → underkategori)
+- geografiska hierarkier (område → delområde)
+- menystrukturer (menu → submenu)
+
+📌 **Implementering:**
+
+Fältet ManagerID är en foreign key till samma tabell.
