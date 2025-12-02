@@ -12,9 +12,14 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Nov 19][Nov19] | Aggregering, Gruppering, Datatyper, Variabler                |
 | [Nov 21][Nov21] | Joins                |
 | [Nov 24][Nov24] | ACID, SQL-injection                |
-
+| [Nov 26][Nov26] | Dataintegritet, constraints, normalisering               |
+| [Nov 28][Nov28] | Set-based programming, Subqueries, Views            |
+| [Dec 1][Dec1]   | Logins, användare och rättigheter                |
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
 [Nov19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov19.md  
 [Nov21]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov21.md  
 [Nov24]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov24.md  
+[Nov26]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov26.md  
+[Nov28]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov28.md  
+[Dec1]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec1.md  
