@@ -59,10 +59,12 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\tables" />
     <Folder Include="PublishLocations" />
+    <Folder Include="dbo\views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\Cities.sql" />
     <Build Include="dbo\tables\Countries.sql" />
+    <Build Include="dbo\views\CityView.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\L003_DatabaseProjectDemo.publish.xml" />
