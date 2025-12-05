@@ -1,8 +1,9 @@
-﻿CREATE VIEW [dbo].[CityView] AS 
+﻿
+CREATE VIEW [dbo].[CityView] AS 
 select 
-	[ci].[Id], 
+	[ci].[CityId], 
 	[ci].[Name] as 'City', 
 	[co].[Name] as 'Country'
 from
 	Cities ci
-	join Countries co on co.Id = ci.CountryID
+	join Countries co on co.[CountryId] = ci.CountryID

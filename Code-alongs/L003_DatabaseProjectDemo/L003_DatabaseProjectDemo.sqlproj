@@ -69,4 +69,7 @@
   <ItemGroup>
     <None Include="PublishLocations\L003_DatabaseProjectDemo.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="L003_DatabaseProjectDemo.refactorlog" />
+  </ItemGroup>
 </Project>
