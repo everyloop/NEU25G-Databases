@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L004_EFcore_Intro", "Code-a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L005_ScaffoldedMusic", "Code-alongs\L005_ScaffoldedMusic\L005_ScaffoldedMusic.csproj", "{A4B518DB-B6C4-40EC-AE44-8D1F092E3C51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L006_ModelConfiguration", "Code-alongs\L006_ModelConfiguration\L006_ModelConfiguration.csproj", "{A82D0900-0073-438B-BA2E-F3623C88190E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L007_Relationships", "Code-alongs\L007_Relationships\L007_Relationships.csproj", "{A4A6C713-3950-4493-941F-7A2C236F86CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{A4B518DB-B6C4-40EC-AE44-8D1F092E3C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4B518DB-B6C4-40EC-AE44-8D1F092E3C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4B518DB-B6C4-40EC-AE44-8D1F092E3C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82D0900-0073-438B-BA2E-F3623C88190E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82D0900-0073-438B-BA2E-F3623C88190E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82D0900-0073-438B-BA2E-F3623C88190E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82D0900-0073-438B-BA2E-F3623C88190E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
