@@ -1,0 +1,59 @@
+﻿<Window x:Class="L008_DataGrid_and_TreeView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L008_DataGrid_and_TreeView"
+        xmlns:model="clr-namespace:L008_DataGrid_and_TreeView.Models"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <TreeView x:Name="myTreeView" >
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type model:Artist}" ItemsSource="{Binding Albums}">
+                    <TextBlock>
+                        <Run Text="{Binding Name}" />
+                        <Run Text="(" /><Run Text="{Binding Albums.Count, Mode=OneWay}" />
+                        <Run Text="albums)" />
+                    </TextBlock>
+                </HierarchicalDataTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type model:Album}" ItemsSource="{Binding Tracks}">
+                    <TextBlock Text="{Binding Title}" />
+                </HierarchicalDataTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type model:Track}">
+                    <TextBlock Text="{Binding Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+        </TreeView>
+
+        <DataGrid x:Name="myDataGrid" 
+                  Grid.Column="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserResizeColumns="False"
+                  CanUserResizeRows="False"
+                  CanUserReorderColumns="False"
+                  CanUserSortColumns="True"
+                  SelectionMode="Extended"
+                  SelectionUnit="CellOrRowHeader"
+                  RowHeaderWidth="20"
+                  HorizontalScrollBarVisibility="Visible"
+                  AlternationCount="2"
+                  RowBackground="White"
+                  AlternatingRowBackground="NavajoWhite"
+        >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Track Name" Width="*" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Album" Width="*" Binding="{Binding AlbumName}" />
+                <DataGridTextColumn Header="Length" Width="100" Binding="{Binding Length}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

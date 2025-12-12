@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L006_ModelConfiguration", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L007_Relationships", "Code-alongs\L007_Relationships\L007_Relationships.csproj", "{A4A6C713-3950-4493-941F-7A2C236F86CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L008_DataGrid_and_TreeView", "Code-alongs\L008_DataGrid_and_TreeView\L008_DataGrid_and_TreeView.csproj", "{A02B766C-AEEC-4932-AFDB-B55C02D4E56F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A6C713-3950-4493-941F-7A2C236F86CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02B766C-AEEC-4932-AFDB-B55C02D4E56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02B766C-AEEC-4932-AFDB-B55C02D4E56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02B766C-AEEC-4932-AFDB-B55C02D4E56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02B766C-AEEC-4932-AFDB-B55C02D4E56F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
