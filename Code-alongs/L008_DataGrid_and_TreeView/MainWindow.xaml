@@ -13,7 +13,7 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
-        <TreeView x:Name="myTreeView" >
+        <TreeView x:Name="myTreeView" SelectedItemChanged="myTreeView_SelectedItemChanged">
             <TreeView.Resources>
                 <HierarchicalDataTemplate DataType="{x:Type model:Artist}" ItemsSource="{Binding Albums}">
                     <TextBlock>
@@ -25,16 +25,16 @@
                 <HierarchicalDataTemplate DataType="{x:Type model:Album}" ItemsSource="{Binding Tracks}">
                     <TextBlock Text="{Binding Title}" />
                 </HierarchicalDataTemplate>
-                <HierarchicalDataTemplate DataType="{x:Type model:Track}">
+                <!--<HierarchicalDataTemplate DataType="{x:Type model:Track}">
                     <TextBlock Text="{Binding Name}" />
-                </HierarchicalDataTemplate>
+                </HierarchicalDataTemplate>-->
             </TreeView.Resources>
         </TreeView>
 
         <DataGrid x:Name="myDataGrid" 
                   Grid.Column="1"
                   AutoGenerateColumns="False"
-                  IsReadOnly="False"
+                  IsReadOnly="True"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
                   CanUserResizeColumns="False"
@@ -51,7 +51,7 @@
         >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Track Name" Width="*" Binding="{Binding Name}" />
-                <DataGridTextColumn Header="Album" Width="*" Binding="{Binding AlbumName}" />
+                <DataGridTextColumn Header="Album" Width="*" Binding="{Binding Composer}" />
                 <DataGridTextColumn Header="Length" Width="100" Binding="{Binding Length}" />
             </DataGrid.Columns>
         </DataGrid>
