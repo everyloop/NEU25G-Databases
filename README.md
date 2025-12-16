@@ -19,6 +19,9 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Dec 5][Dec5]   | Index                |
 | [Dec 8][Dec8]   | EF Core intro. Migrations. Scaffolding.               |
 | [Dec 10][Dec10] | Modelkonfigurering. Relaterad data.                |
+| [Dec 12][Dec12] |WPF: TreeView & DataGrid               |
+| [Dec 15][Dec15] | Simple Logging. Change Tracking.                |
+
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
 [Nov19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov19.md  
@@ -31,3 +34,5 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Dec5]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec5.md  
 [Dec8]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec8.md  
 [Dec10]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec10.md  
+[Dec12]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec12.md  
+[Dec15]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec15.md  
