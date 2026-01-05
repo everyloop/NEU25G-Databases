@@ -24,6 +24,7 @@ Den är lättviktig, snabb och kräver ingen installation, serverprocess eller n
 - inte avsedd för mycket stora databaser
 - begränsad samtidig skrivning
 - saknar vissa funktioner som finns i SQL Server (t.ex. avancerade datatyper, stored procedures m.m.)
+- det är ingen server och kan därför inte ta emot queries och tillhandahålla klienter med data över nätverk.
 
 [Läs mer på sqlite.org](https://sqlite.org/about.html)
 
