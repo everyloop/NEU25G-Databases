@@ -22,6 +22,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Dec 12][Dec12] |WPF: TreeView & DataGrid               |
 | [Dec 15][Dec15] | Simple Logging. Change Tracking.                |
 | [Dec 17][Dec17] | Demoprojekt "CompanyDemo" i EF Core               |
+| [Jan 5][Jan5] | SQLite               |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
@@ -38,3 +39,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Dec12]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec12.md  
 [Dec15]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec15.md  
 [Dec17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec17.md  
+[Jan5]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan5.md  
