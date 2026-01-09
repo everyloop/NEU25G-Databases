@@ -24,6 +24,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Dec 17][Dec17] | Demoprojekt "CompanyDemo" i EF Core               |
 | [Jan 5][Jan5] | SQLite               |
 | [Jan 7][Jan7] | NoSQL - Översikt               |
+| [Jan 9][Jan9] | MongoDB - Intro & CRUD               |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
@@ -42,3 +43,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Dec17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Dec17.md  
 [Jan5]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan5.md  
 [Jan7]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan7.md  
+[Jan9]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan9.md  
