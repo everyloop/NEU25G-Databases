@@ -221,7 +221,10 @@ Bra för:
 - Index gör sökningar snabba  
 - Utan index → MongoDB läser hela collectionen  
 - Med index → snabb uppslagning  
-
+- Men index har **overhead**:
+  - tar extra lagringsutrymme
+  - gör skrivningar (insert/update/delete) lite långsammare 
+  
 Exempel:
 
 ```js
