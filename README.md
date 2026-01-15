@@ -25,6 +25,8 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Jan 5][Jan5] | SQLite               |
 | [Jan 7][Jan7] | NoSQL - Översikt               |
 | [Jan 9][Jan9] | MongoDB - Intro & CRUD               |
+| [Jan 12][Jan12] | Aggregation pipelines               |
+| [Jan 14][Jan14] | MongoDb Driver               |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
@@ -44,3 +46,5 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Jan5]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan5.md  
 [Jan7]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan7.md  
 [Jan9]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan9.md  
+[Jan12]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan12.md  
+[Jan14]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
