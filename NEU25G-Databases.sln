@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L012_MongoDb.Driver", "Code
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L013_BsonDocument", "Code-alongs\L013_BsonDocument\L013_BsonDocument.csproj", "{4B700A0B-B5D0-4E54-AF4F-9FC4E2DE690E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L014_RepositoryPattern", "Code-alongs\L014_RepositoryPattern\L014_RepositoryPattern.csproj", "{EB073A66-0F83-44A7-91FF-64447076B1EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{4B700A0B-B5D0-4E54-AF4F-9FC4E2DE690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B700A0B-B5D0-4E54-AF4F-9FC4E2DE690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B700A0B-B5D0-4E54-AF4F-9FC4E2DE690E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB073A66-0F83-44A7-91FF-64447076B1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB073A66-0F83-44A7-91FF-64447076B1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB073A66-0F83-44A7-91FF-64447076B1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB073A66-0F83-44A7-91FF-64447076B1EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
