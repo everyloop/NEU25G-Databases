@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace L014_RepositoryPattern.Domain
 {
-    internal class Movie
+    internal class Movie : IHasId<ObjectId>
     {
         public required ObjectId Id { get; set; }
         public required string Title { get; set; }
