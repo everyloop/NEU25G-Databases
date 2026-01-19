@@ -3,6 +3,7 @@ using L014_RepositoryPattern.Domain;
 using L014_RepositoryPattern.Repositories.Interfaces;
 using L014_RepositoryPattern.Repositories.Mongo;
 using L014_RepositoryPattern.Repositories.Mongo.Mapping;
+using L014_RepositoryPattern.Repositories.Sql;
 using L014_RepositoryPattern.Repositories.Sql.Config;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -30,12 +31,17 @@ IMovieRepository repository = new MongoMovieRepository(database);
 //await repository.ReplaceAsync(newMovie);
 //await repository.RemoveAsync(newMovie);
 
-var topRatedMovies = await repository.GetTopRatedMoviesAsync(5, 1995);
+//var topRatedMovies = await repository.GetTopRatedMoviesAsync(5, 1995);
 
-foreach (var movie in topRatedMovies)
-{
-    Console.WriteLine($"{movie.Title} - {movie.Imdb.Rating}");
-}
+//foreach (var movie in topRatedMovies)
+//{
+//    Console.WriteLine($"{movie.Title} - {movie.Imdb.Rating}");
+//}
+
+using var db = new MovieDbContext();
+
+var sqlRepository = new SqlMovieRepository(db);
+
 
 Console.Write("\nSearch: ");
 string query = Console.ReadLine();
@@ -44,8 +50,22 @@ var searchResult = await repository.SearchByTitleAsync(query);
 
 foreach (var movie in searchResult)
 {
-    Console.WriteLine($"{movie.Title} ({movie.Year})");
+    Console.Write($"{movie.Title} ({movie.Year}) - ");
+
+    var existing = await sqlRepository.GetByIdAsync(movie.Id);
+
+    if (existing is null)
+    {
+        await sqlRepository.AddAsync(movie);
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Copied!");
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Skipped!");
+    }
+
+    Console.ResetColor();
 }
 
-using var db = new MovieDbContext();
-db.Database.EnsureCreated();
