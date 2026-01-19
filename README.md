@@ -50,5 +50,5 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Jan9]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan9.md  
 [Jan12]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan12.md  
 [Jan14]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
-[Jan16]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
-[Jan19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
+[Jan16]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan16.md  
+[Jan19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan19.md  
