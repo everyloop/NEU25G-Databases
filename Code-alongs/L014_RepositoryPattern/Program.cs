@@ -3,6 +3,7 @@ using L014_RepositoryPattern.Domain;
 using L014_RepositoryPattern.Repositories.Interfaces;
 using L014_RepositoryPattern.Repositories.Mongo;
 using L014_RepositoryPattern.Repositories.Mongo.Mapping;
+using L014_RepositoryPattern.Repositories.Sql.Config;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -45,3 +46,6 @@ foreach (var movie in searchResult)
 {
     Console.WriteLine($"{movie.Title} ({movie.Year})");
 }
+
+using var db = new MovieDbContext();
+db.Database.EnsureCreated();
