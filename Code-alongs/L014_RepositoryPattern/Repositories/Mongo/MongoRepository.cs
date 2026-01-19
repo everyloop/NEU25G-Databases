@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace L014_RepositoryPattern.Repositories.Mongo;
 
-internal class MongoRepository<TEntity, TId> : IRepository<TEntity, TId> where TEntity : class, IHasId<TId>
+internal abstract class MongoRepository<TEntity, TId> : IRepository<TEntity, TId> where TEntity : class, IHasId<TId>
 {
     protected readonly IMongoCollection<TEntity> _collection;
 

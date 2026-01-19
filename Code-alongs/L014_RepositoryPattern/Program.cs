@@ -16,9 +16,32 @@ var database = client.GetDatabase("sample_mflix");
 //var movie = await collection.Find(Builders<Movie>.Filter.Empty).FirstOrDefaultAsync();
 
 
-IRepository<Movie, ObjectId> repository = new MongoRepository<Movie, ObjectId>(database, "movies");
+IMovieRepository repository = new MongoMovieRepository(database);
 
-var movie = await repository.GetByIdAsync(new ObjectId("573a1392f29313caabcd9a10"));
-Console.WriteLine($"{movie.Title} ({movie.Year})");
-Console.WriteLine(movie.Plot);
+//var movie = await repository.GetByIdAsync(new ObjectId("573a1392f29313caabcd9a10"));
+//var movie = await repository.GetByImdbIdAsync(133093);
+//Console.WriteLine($"{movie.Title} ({movie.Year})");
+//Console.WriteLine(movie.Plot);
 
+//var newMovie = new Movie() { Id = ObjectId.GenerateNewId(), Title = "mongo", Imdb = new ImdbInfo() };
+//await repository.AddAsync(newMovie);
+//newMovie.Plot = "A movie about mongodb.";
+//await repository.ReplaceAsync(newMovie);
+//await repository.RemoveAsync(newMovie);
+
+var topRatedMovies = await repository.GetTopRatedMoviesAsync(5, 1995);
+
+foreach (var movie in topRatedMovies)
+{
+    Console.WriteLine($"{movie.Title} - {movie.Imdb.Rating}");
+}
+
+Console.Write("\nSearch: ");
+string query = Console.ReadLine();
+
+var searchResult = await repository.SearchByTitleAsync(query);
+
+foreach (var movie in searchResult)
+{
+    Console.WriteLine($"{movie.Title} ({movie.Year})");
+}
