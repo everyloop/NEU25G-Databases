@@ -27,6 +27,8 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Jan 9][Jan9] | MongoDB - Intro & CRUD               |
 | [Jan 12][Jan12] | Aggregation pipelines               |
 | [Jan 14][Jan14] | MongoDb Driver               |
+| [Jan 16][Jan16] | Git & GitHub               |
+| [Jan 19][Jan19] | DDD & Repository pattern           |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
@@ -48,3 +50,5 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Jan9]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan9.md  
 [Jan12]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan12.md  
 [Jan14]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
+[Jan16]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
+[Jan19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan14.md  
