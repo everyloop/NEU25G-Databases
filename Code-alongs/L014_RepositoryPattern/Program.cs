@@ -5,20 +5,31 @@ using L014_RepositoryPattern.Repositories.Mongo;
 using L014_RepositoryPattern.Repositories.Mongo.Mapping;
 using L014_RepositoryPattern.Repositories.Sql;
 using L014_RepositoryPattern.Repositories.Sql.Config;
+using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
 MongoMappings.Register();
 
 var client = new MongoClient("mongodb+srv://fredrik:fredrik@cluster0.9zffbjc.mongodb.net/");
-var database = client.GetDatabase("sample_mflix");
+var mongoDatabase = client.GetDatabase("sample_mflix");
+
+using var sqlContext = new MovieDbContext();
+sqlContext.Database.OpenConnection();
+
+bool useMongo = false;
+
+IMovieRepository repository = useMongo
+    ? new MongoMovieRepository(mongoDatabase)
+    : new SqlMovieRepository(sqlContext);
+
+//var sqlRepository = new SqlMovieRepository(db);
 
 //var collection = database.GetCollection<Movie>("movies");
 
 //var movie = await collection.Find(Builders<Movie>.Filter.Empty).FirstOrDefaultAsync();
 
 
-IMovieRepository repository = new MongoMovieRepository(database);
 
 //var movie = await repository.GetByIdAsync(new ObjectId("573a1392f29313caabcd9a10"));
 //var movie = await repository.GetByImdbIdAsync(133093);
@@ -31,17 +42,12 @@ IMovieRepository repository = new MongoMovieRepository(database);
 //await repository.ReplaceAsync(newMovie);
 //await repository.RemoveAsync(newMovie);
 
-//var topRatedMovies = await repository.GetTopRatedMoviesAsync(5, 1995);
+var topRatedMovies = await repository.GetTopRatedMoviesAsync(5, 1995);
 
-//foreach (var movie in topRatedMovies)
-//{
-//    Console.WriteLine($"{movie.Title} - {movie.Imdb.Rating}");
-//}
-
-using var db = new MovieDbContext();
-
-var sqlRepository = new SqlMovieRepository(db);
-
+foreach (var movie in topRatedMovies)
+{
+    Console.WriteLine($"{movie.Title} - {movie.Imdb.Rating}");
+}
 
 Console.Write("\nSearch: ");
 string query = Console.ReadLine();
@@ -50,22 +56,22 @@ var searchResult = await repository.SearchByTitleAsync(query);
 
 foreach (var movie in searchResult)
 {
-    Console.Write($"{movie.Title} ({movie.Year}) - ");
+    Console.WriteLine($"{movie.Title} ({movie.Year})");
 
-    var existing = await sqlRepository.GetByIdAsync(movie.Id);
+    //var existing = await sqlRepository.GetByIdAsync(movie.Id);
 
-    if (existing is null)
-    {
-        await sqlRepository.AddAsync(movie);
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Copied!");
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Skipped!");
-    }
+    //if (existing is null)
+    //{
+    //    await sqlRepository.AddAsync(movie);
+    //    Console.ForegroundColor = ConsoleColor.Green;
+    //    Console.WriteLine("Copied!");
+    //}
+    //else
+    //{
+    //    Console.ForegroundColor = ConsoleColor.Red;
+    //    Console.WriteLine("Skipped!");
+    //}
 
-    Console.ResetColor();
+    //Console.ResetColor();
 }
 
