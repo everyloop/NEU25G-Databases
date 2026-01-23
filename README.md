@@ -19,7 +19,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Dec 5][Dec5]   | Index                |
 | [Dec 8][Dec8]   | EF Core intro. Migrations. Scaffolding.               |
 | [Dec 10][Dec10] | Modelkonfigurering. Relaterad data.                |
-| [Dec 12][Dec12] |WPF: TreeView & DataGrid               |
+| [Dec 12][Dec12] |WPF: TreeView & DataGrid **- Kommer inte på tentan**              |
 | [Dec 15][Dec15] | Simple Logging. Change Tracking.                |
 | [Dec 17][Dec17] | Demoprojekt "CompanyDemo" i EF Core               |
 | [Jan 5][Jan5] | SQLite               |
@@ -27,7 +27,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Jan 9][Jan9] | MongoDB - Intro & CRUD               |
 | [Jan 12][Jan12] | Aggregation pipelines               |
 | [Jan 14][Jan14] | MongoDb Driver               |
-| [Jan 16][Jan16] | Git & GitHub               |
+| [Jan 16][Jan16] | Git & GitHub **- Kommer inte på tentan**              |
 | [Jan 19][Jan19] | DDD & Repository pattern           |
 | [Jan 21][Jan21] | ETL: MongoDB -> CSV -> SQL Server     |
 
