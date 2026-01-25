@@ -6,7 +6,6 @@ Detta innebär **inte** att SQL Server blir en dokumentdatabas, utan att den rel
 
 JSON-stödet är främst tänkt som ett komplement till den relationsbaserade modellen.
 
-
 ### När JSON i SQL Server är ett bra val
 
 - När de flesta kolumner är kända och stabila, men vissa fält är:
@@ -24,7 +23,6 @@ Exempel:
 - Users med fast struktur + ExtraInfo (JSON)
 - Products med OptionalInfo (JSON)
 
----
 
 ### När JSON i SQL Server bör undvikas
 
@@ -40,7 +38,6 @@ Exempel:
 > Om du ofta använder ett JSON-fält i WHERE, JOIN eller ORDER BY  
 > → det borde troligen vara en vanlig kolumn istället.
 
----
 
 ### När MongoDB (eller annan dokumentdatabas) är bättre
 
@@ -54,7 +51,6 @@ Kort sagt:
 - SQL Server + JSON → relationell databas med lite flexibilitet  
 - MongoDB → dokumentdatabas i grunden
 
----
 
 ### Viktig princip
 
@@ -68,6 +64,9 @@ Därför behövs:
 
 
 ## JSON_OBJECT & JSON_ARRAY
+
+**Code-along:**  
+[025_Json_object_&_Json_array](https://github.com/everyloop/NEU25G-Databases/blob/main/SQL/025_Json_object_%26_Json_array.sql)
 
 **Används för att bygga JSON-strukturer i T-SQL utan att skriva råa JSON-strängar.**
 
@@ -144,7 +143,10 @@ Bygg JSON som struktur – inte som sträng.
 
 ## ISJSON, JSON_VALUE, JSON_MODIFY
 
-Tabell:
+**Code-along:**  
+[026_Exempeltabell_med_json_kolumn](https://github.com/everyloop/NEU25G-Databases/blob/main/SQL/026_Exempeltabell_med_json_kolumn.sql)
+
+**Tabell:**
 
 ````sql
 create table products
@@ -205,8 +207,10 @@ Om fältet saknas → skapas.
 
 ## FOR JSON AUTO & FOR JSON PATH
 
-Används för att **skapa JSON från SQL-resultat**.
+**Code-along:**  
+[023_For_json_path](https://github.com/everyloop/NEU25G-Databases/blob/main/SQL/023_For_json_path.sql)
 
+Används för att **skapa JSON från SQL-resultat**.
 
 ### FOR JSON AUTO
 Automatisk struktur baserad på tabeller och joins.
@@ -283,6 +287,9 @@ FROM funktion(...)
 
 
 ## OPENJSON
+
+**Code-along:**  
+[024_Openrowset_&_openjson](https://github.com/everyloop/NEU25G-Databases/blob/main/SQL/024_Openrowset_%26_openjson.sql)
 
 **Table-valued function som gör JSON → tabell.**
 
