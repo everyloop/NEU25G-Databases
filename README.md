@@ -30,6 +30,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 | [Jan 16][Jan16] | Git & GitHub **- Kommer inte på tentan**              |
 | [Jan 19][Jan19] | DDD & Repository pattern           |
 | [Jan 21][Jan21] | ETL: MongoDB -> CSV -> SQL Server     |
+| [Jan 23][Jan23] | Json-funktioner i T-SQL     |
 
 
 [Nov17]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Nov17.md  
@@ -54,3 +55,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, samt [�
 [Jan16]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan16.md  
 [Jan19]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan19.md  
 [Jan21]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan21.md  
+[Jan23]: https://github.com/everyloop/NEU25G-Databases/blob/master/Lecture-notes/Jan23.md  
